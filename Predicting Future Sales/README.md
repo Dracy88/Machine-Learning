@@ -4,23 +4,24 @@ My personal project of a Data Kaggle competition (https://www.kaggle.com/c/compe
 The target is try to predict the next future sales of the 1C Company for the next month, starting from a russian dataset that contains the sells of various items for each store from Jan 2013 to Oct 2015.
 
 ## Summary
-- I had used GBDT with LightGbm since it’s more fast than Xgboost and Sklearn. I also noticed that GBDT are really fast
-to implement, with good results and a little hyper parameter tune.
-- Libraries: 
-- Pandas (to manage the data frames)
-- Numpy (to manipulate vectors)
-- Matplotlib
-- Sklearn (for label encoding and mean square metrics), Pickle (to dump the models and
-processed sets).
-● Tools: Python, Jupyter notebook and Virtual Env.
+- I had used GBDT with LightGbm since it’s more fast than Xgboost and Sklearn. I also noticed that GBDT are really fast to implement, with good results and a little hyper parameter tune.
+- Due to a low computational resources, i had use a manual search for the hyperparameters
+- The best features are lagged month intervals with 1 month and items
+- I had analyzed features impact with the tool “feature importance” of LightGBM.
 
+## Libraries: 
+- Pandas 0.25.3 (to manage the data frames)
+- Numpy 1.18.1 (to manipulate vectors)
+- LightGbm 2.3.1
+- Matplotlib 3.1.2
+- Sklearn 0.22.1 (for label encoding and mean square metrics)
+- Pickle 0.7.5 (to dump the models and processed sets).
 
-# Natural Language Processing (NLP)
-This Repository contains my personal overview about NLP.
+## Tools:
+- Python 3.7
+- Jupyter notebook
+- Virtual Env.
 
-## Project:
-- Sarcasm Detection
-- BBC News Archive
-- IMDB Review
-- Sequence Model Rap
-- Sequence Model Shakespeare
+Interesting Findings
+- I initially tried with a linear combination of Random Forest, GBDT, Linear Regression and KNN, however i noticed how was more better use only GBDT.
+- The best trick i had used is lagged mean, since we had temporal datas and also an upper trend of selles.
