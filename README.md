@@ -1,2 +1,2 @@
 # Machine-Learning
-Some projects to understand how to set a machine learning project and how 
+Some projects of Machine Learning to understand the ML pipelines and the methods to make features and models.
