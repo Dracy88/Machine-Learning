@@ -5,8 +5,8 @@ The target is try to predict the next future sales of the 1C Company for the nex
 
 ## Summary
 - I had used GBDT with LightGbm since it’s more fast than Xgboost and Sklearn. I also noticed that GBDT are really fast to implement, with good results and a little hyper parameter tune.
-- Due to a low computational resources, i had use a manual search for the hyperparameters
-- The best features are lagged month intervals with 1 month and items
+- Due to a low computational resources, i had use a manual search for the hyperparameters.
+- The best features are lagged month intervals with 1 month and items.
 - I had analyzed features impact with the tool “feature importance” of LightGBM.
 
 ## Libraries: 
@@ -22,6 +22,6 @@ The target is try to predict the next future sales of the 1C Company for the nex
 - Jupyter notebook
 - Virtual Env.
 
-Interesting Findings
+## Interesting Findings:
 - I initially tried with a linear combination of Random Forest, GBDT, Linear Regression and KNN, however i noticed how was more better use only GBDT.
 - The best trick i had used is lagged mean, since we had temporal datas and also an upper trend of selles.
