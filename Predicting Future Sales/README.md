@@ -4,6 +4,7 @@ My personal project of a Data Kaggle competition (https://www.kaggle.com/c/compe
 The target is try to predict the next future sales of the 1C Company for the next month, starting from a russian dataset that contains the sells of various items for each store from Jan 2013 to Oct 2015.
 
 The first part is specialized into the EDA and Feature Engineering phase of the project (Springleaf_EDA_Final.ipynb).
+
 The second part is focussed on the creation of the model with LightBM.
 In the "Model" folder you can find the model's weight, so you can use it by loading into the model without the need to re-train again the entire system.
 
@@ -27,5 +28,5 @@ In the "Model" folder you can find the model's weight, so you can use it by load
 - Virtual Env.
 
 ## Interesting Findings:
-- I initially tried with a linear combination of Random Forest, GBDT, Linear Regression and KNN, however i noticed how was more better use only GBDT.
-- The best trick i had used is lagged mean, since we had temporal datas and also an upper trend of selles.
+- I had initially tried with a linear combination of Random Forest, GBDT, Linear Regression and KNN, however i noticed how was more better use only GBDT.
+- The best trick i had used it's the lagged mean, since we had temporal datas and also an upper trend of selles.
