@@ -1,0 +1,10 @@
+0. download the db.zip, dataset.zip and lib.zip
+1. import the two db into db.zip
+2. edit the my.cnf file of mysql using the my.cnf in the readme folder or editing those string into the original:
+[mysqld]
+tmp_table_size=1G
+max_heap_table_size=1G
+connect_timeout=3600
+3. import the software using the build.xml 
+4. use the "training" folder if you want train with five classes (rank 1...5) or user "training_bin" if you are only interested in the sentiment.
+You must also use the respective testing folder according to training folder (eg. training-->testing, trainin_bin-->testing_bin.
