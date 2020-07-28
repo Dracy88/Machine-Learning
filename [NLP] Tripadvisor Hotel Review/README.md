@@ -1,6 +1,7 @@
 In this project I will show you how to predict the Rank or Sentiment from a text review using the NLP techniques and Naive Bayes as classifier.
 
 1. download the following files:
+
 db.zip (https://drive.google.com/file/d/0B7KzPm7u3GNbZFh1QXFiSXkyVXc/view?usp=sharing)
 dataset.zip (https://drive.google.com/file/d/0B7KzPm7u3GNbQWFiZzdsNVhwdk0/view?usp=sharing)
 lib.zip (https://drive.google.com/drive/folders/0B7KzPm7u3GNbcU1WelBmZGVnTEE?usp=sharing)
