@@ -5,11 +5,11 @@ The target is try to predict the next future sales of the 1C Company for the nex
 
 The first part is specialized into the EDA and Feature Engineering phase of the project (Springleaf_EDA_Final.ipynb).
 
-The second part is focussed on the creation of the model with LightBM.
+The second part is focussed on the creation of the model with LightGBM.
 In the "Model" folder you can find the model's weight, so you can use it by loading into the model without the need to re-train again the entire system.
 
 ## Summary
-- I had used GBDT with LightGbm since it’s more fast than Xgboost and Sklearn. I also noticed that GBDT are really fast to implement, with good results and a little hyper parameter tune.
+- I had used GBDT with LightGBM since it’s more fast than Xgboost and Sklearn. I also noticed that GBDT are really fast to implement, with good results and a little hyper parameter tune.
 - Due to a low computational resources, i had use a manual search for the hyperparameters.
 - The best features are lagged month intervals with 1 month and items.
 - I had analyzed features impact with the tool “feature importance” of LightGBM.
@@ -17,7 +17,7 @@ In the "Model" folder you can find the model's weight, so you can use it by load
 ## Libraries: 
 - Pandas 0.25.3 (to manage the data frames)
 - Numpy 1.18.1 (to manipulate vectors)
-- LightGbm 2.3.1
+- LightGBM 2.3.1
 - Matplotlib 3.1.2
 - Sklearn 0.22.1 (for label encoding and mean square metrics)
 - Pickle 0.7.5 (to dump the models and processed sets).
